@@ -41,7 +41,7 @@ module Players
      end
     end
 
-    def opponent_token
+    def opponent_token #know what opponent token is
       self.token == "X" ? "O" : "X"
     end
 
