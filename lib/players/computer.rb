@@ -41,6 +41,10 @@ module Players
      end
     end
 
+    def opponent_token
+      self.token == "X" ? "O" : "X"
+    end
+
 
 
       #check if corners taken by opponent & if yes take opposite corner, if no then
