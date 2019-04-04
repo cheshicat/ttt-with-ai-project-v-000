@@ -32,7 +32,7 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def draw?
+  def draw? #checks if tie
     board.full? && !won?
   end
 
