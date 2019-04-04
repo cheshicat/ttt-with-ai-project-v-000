@@ -10,6 +10,7 @@ module Players
     end
 
     def best_move(board) #play your best option
+    end
 
     def corner(board) #check board corners
       [0,2,6,8].detect{|cell| !board.taken?(cell+1)}
