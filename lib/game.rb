@@ -67,7 +67,4 @@ WIN_COMBINATIONS = [
       puts "Cat's Game!"
     end
   end
-
-
-
 end
