@@ -7,7 +7,7 @@ module Players
       '5'
       else
         best_move(board) + 1
-      #next best move
+      end
     end
 
     def best_move(board) #play your best option
