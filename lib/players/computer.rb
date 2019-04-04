@@ -5,6 +5,7 @@ module Players
     #first move - check if center cell avail & if yes take center
     if !board.taken?('5')
       '5'
+    end
 
       #check if corners taken by opponent & if yes take opposite corner, if no then
         #check if corner taken by self & if yes, take opposite corner
