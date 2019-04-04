@@ -28,6 +28,6 @@ module Players
         #if no take corner
       #check if winning combo for self possible & if yes make winning move
       #check if winning combo for opponent possible & if yes block
-
+    end
   end
 end
