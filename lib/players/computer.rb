@@ -2,8 +2,10 @@ module Players
   class Computer < Player
 
     def move(board)
+    #first move - check if center cell avail & if yes take center
+    if !board.taken?('5')
+      '5'
 
-      #check if center cell avail & if yes take center
       #check if corners taken by opponent & if yes take opposite corner, if no then
         #check if corner taken by self & if yes, take opposite corner
         #if no take corner
