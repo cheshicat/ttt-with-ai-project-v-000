@@ -36,5 +36,4 @@ class TicTacToeCLI
       input = gets.strip
     end
   end
-
 end
