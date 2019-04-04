@@ -1,7 +1,7 @@
 require "pry"
 
 class Game
-  attr_accessor :board, :player_1, :player_2, :timer
+  attr_accessor :board, :player_1, :player_2
 
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -14,12 +14,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
 
-  def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new, wargame = false)
+  def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
     @player_1 = player_1
     @player_2 = player_2
     @board = board
-    @wargame = wargame
-    @timer = 1.5
   end
 
   def current_player #current player
@@ -32,15 +30,15 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def draw? #checks if tie
+  def draw?
     board.full? && !won?
   end
 
-  def over? #checks if game over
+  def over?
     won? || draw?
   end
 
-  def winner #checks if winner
+  def winner
     board.cells[won?[0]] if won?
   end
 
