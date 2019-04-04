@@ -25,6 +25,11 @@ module Players
 
     def win(board)
     #check if winning combo for self possible & if yes make winning move
+      winning_combo = complete_combo?(board, self.token)
+      if winning_combo && winning_combo.count{|index| board.position(index+1) == self.token} == 2
+        puts "...found winning combo #{winning_combo}"
+        winning_combo.detect{|index| !board.taken?(index+1)}
+      end
     end
 
 
