@@ -18,6 +18,8 @@ WIN_COMBINATIONS = [
     @player_1 = player_1
     @player_2 = player_2
     @board = board
+    @wargame = wargame
+    @timer = 1.5
   end
 
   def current_player
