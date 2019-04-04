@@ -4,6 +4,7 @@ class TicTacToeCLI
   end
 
   def call
+    puts "Welcome to Tic Tac Toe with AI!"
   end
 
 end
