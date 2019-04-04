@@ -40,7 +40,7 @@ WIN_COMBINATIONS = [
     won? || draw?
   end
 
-  def winner
+  def winner #checks if winner
     board.cells[won?[0]] if won?
   end
 
