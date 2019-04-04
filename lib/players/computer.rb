@@ -45,11 +45,9 @@ module Players
       self.token == "X" ? "O" : "X"
     end
 
+    def random
+      (0..8).to_a.sample
 
-
-      #check if corners taken by opponent & if yes take opposite corner, if no then
-        #check if corner taken by self & if yes, take opposite corner
-        #if no take corner
     end
   end
 end
