@@ -13,6 +13,9 @@ module Players
       [0,2,6,8].detect{|cell| !board.taken?(cell+1)}
     end
 
+    def complete_combo?(board, token)
+    end
+
       #check if corners taken by opponent & if yes take opposite corner, if no then
         #check if corner taken by self & if yes, take opposite corner
         #if no take corner
