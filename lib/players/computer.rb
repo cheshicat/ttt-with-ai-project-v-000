@@ -45,7 +45,7 @@ module Players
       self.token == "X" ? "O" : "X"
     end
 
-    def random
+    def random #try any move avail
       (0..8).to_a.sample
     end
 
