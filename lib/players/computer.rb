@@ -47,6 +47,7 @@ module Players
 
     def random
       (0..8).to_a.sample
+    end
 
     end
   end
