@@ -32,11 +32,20 @@ module Players
       end
     end
 
+    def block(board)
+    #check if winning combo for opponent possible & if yes block
+    blocking_combo = complete_combo?(board, self.opponent_token)
+      if blocking_combo && blocking_combo.count{|index| board.position(index+1) == self.opponent_token} == 2
+        puts "...found blocking combo #{blocking_combo}"
+       blocking_combo.detect{|index| !board.taken?(index+1)}
+     end
+    end
+
+
 
       #check if corners taken by opponent & if yes take opposite corner, if no then
         #check if corner taken by self & if yes, take opposite corner
         #if no take corner
-      #check if winning combo for opponent possible & if yes block
     end
   end
 end
