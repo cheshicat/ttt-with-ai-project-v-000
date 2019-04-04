@@ -34,7 +34,6 @@ class TicTacToeCLI
 
       puts "Would you like to play again? Please enter [play again] or [exit]"
       input = gets.strip
-      end
     end
   end
 
