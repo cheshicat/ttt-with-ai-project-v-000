@@ -9,6 +9,10 @@ module Players
       #next best move
     end
 
+    def corner(board)
+      [0,2,6,8].detect{|cell| !board.taken?(cell+1)}
+    end
+
       #check if corners taken by opponent & if yes take opposite corner, if no then
         #check if corner taken by self & if yes, take opposite corner
         #if no take corner
