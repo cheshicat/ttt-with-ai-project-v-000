@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
     board.full? && !won?
   end
 
-  def over?
+  def over? #checks if game over
     won? || draw?
   end
 
