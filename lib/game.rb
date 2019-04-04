@@ -22,7 +22,7 @@ WIN_COMBINATIONS = [
     @timer = 1.5
   end
 
-  def current_player
+  def current_player #current player
     board.turn_count % 2 == 0 ? player_1 : player_2
   end
 
