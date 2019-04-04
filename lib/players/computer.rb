@@ -25,6 +25,7 @@ module Players
 
     def win(board)
     #check if winning combo for self possible & if yes make winning move
+    end
 
 
       #check if corners taken by opponent & if yes take opposite corner, if no then
