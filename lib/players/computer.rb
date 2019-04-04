@@ -48,12 +48,10 @@ module Players
 
     def opponent_token #know what opponent token is
       self.token == "X" ? "O" : "X"
-    end
 
     def random #try any move avail
       (0..8).to_a.sample
     end
-
-    end
   end
+end
 end
