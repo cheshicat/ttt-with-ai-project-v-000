@@ -20,6 +20,7 @@ module Players
         !board.taken?(combo[2]+1)) || ((board.cells[combo[1]] == token && board.cells[combo[2]] == token) &&
         !board.taken?(combo[0]+1)) || ((board.cells[combo[0]] == token && board.cells[combo[2]] == token) &&
         !board.taken?(combo[1]+1))
+      end
     end
 
       #check if corners taken by opponent & if yes take opposite corner, if no then
