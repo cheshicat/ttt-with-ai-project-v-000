@@ -10,6 +10,7 @@ module Players
     end
 
     def best_move(board) #play your best option
+      win(board) || block(board) || corner(board) || random
     end
 
     def corner(board) #check board corners
